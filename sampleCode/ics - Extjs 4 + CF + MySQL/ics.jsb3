@@ -1,0 +1,152 @@
+{
+    "projectName": "ICS Integrated Compliance System",
+    "licenseText": "ICS 1.8.2 Copyright(c) 2012-2013 MHW Ltd. Developed by www.bameus.com",
+    "extBuildDate": "ext-4.2.3.1174",
+    "builds": [
+        {
+            "name": "All Classes",
+            "target": "extjs/all-classes.js",
+            "options": {
+                "debug": true
+            },
+            "files": [
+                 { "clsName": "Ext.ux.form.SearchField",	"name": "SearchField.js",	"path": "../../ext-4.2.3.1174/examples/ux/form/"}
+                ,{ "clsName": "Ext.ux.SimpleIFrame",		"name": "SimpleIFrame.js",	"path": "app/ux/" }
+                ,{ "clsName": "Ext.ux.layout.Center",		"name": "Center.js",		"path": "../../ext-4.2.3.1174/examples/ux/layout/"}
+	            ,{ "clsName": "Ext.ux.IFrame",				"name": "IFrame.js",		"path": "../../ext-4.2.3.1174/examples/ux/"}
+                ,{ "clsName": "Ext.ux.Toast", 				"name": "Toast.js", 		"path": "app/ux/" }
+                ,{ "clsName": "Ext.ux.grid.GridPrinter",	"name": "GridPrinter.js",	"path": "app/ux/" }
+                
+                ,{ "name": "App.i18n-en_us.js",			"path": "app/locale/" }              
+                ,{ "name": "ReportForm.js",				"path": "app/ui/" }
+                ,{ "name": "Format.js",					"path": "app/ui/" }
+                ,{ "name": "Util.js",					"path": "app/ui/" }
+                ,{ "name": "Notification.js",			"path": "app/ux/" }
+                ,{ "name": "GridOutputTool.js",			"path": "app/ux/" }
+                ,{ "name": "PanelHeaderExtraIcons.js",	"path": "app/ux/" }
+                ,{ "name": "CFQueryReader.js",			"path": "app/ux/" }
+				,{ "name": "ClearSearchButton.js",		"path": "app/ui/" }
+                
+                ,{ "name": "SupportStore.js",	"path": "app/support/" }
+         		,{ "name": "SupportTree.js",	"path": "app/support/" }
+         		,{ "name": "Feedback.js",		"path": "app/ui/" }
+         		,{ "name": "ComplNavTree.js",	"path": "app/ui/" }
+         		,{ "name": "IcsNavView.js",		"path": "app/ui/" }
+
+                ,{ "name": "EmailBaseForm.js",		    "path": "app/product/" }
+                ,{ "name": "EmailCertForm.js",		    "path": "app/product/" }
+         		,{ "name": "ReportStore.js",		    "path": "app/report/" }
+    			,{ "name": "ReportPrintPanel.js",	    "path": "app/report/" }
+         		,{ "name": "EmailReportModel.js",	    "path": "app/report/" }
+    			,{ "name": "EmailProdInfo.js",		    "path": "app/report/" }
+
+    			,{ "name": "StateComplModel.js",		"path": "app/state/" }
+    			,{ "name": "StateComplStore.js",		"path": "app/state/" }
+                ,{ "name": "StateComplGrid.js",         "path": "app/state/" }
+
+
+                ,{ "name": "ProductRegRequestForm.js",  "path": "app/product/" }
+                ,{ "name": "ProductFCModel.js",         "path": "app/product/" }
+                ,{ "name": "ProductFCStore.js",         "path": "app/product/" }
+                ,{ "name": "ProductGrid.js",            "path": "app/product/" }
+                ,{ "name": "ProductFCPanel.js",         "path": "app/product/" }
+                ,{ "name": "ProductDetailPanel.js",     "path": "app/product/" }
+
+                ,{ "name": "PricePostingModel.js",      "path": "app/priceposting/" }
+                ,{ "name": "PricePostingStore.js",      "path": "app/priceposting/" }
+                ,{ "name": "PricePostingGrid.js",       "path": "app/priceposting/" }
+                ,{ "name": "DistribAppointModel.js",    "path": "app/state/" }
+                ,{ "name": "DistribAppointStore.js",    "path": "app/state/" }
+                ,{ "name": "DistribAppointGrid.js",     "path": "app/state/" }
+                ,{ "name": "ProductSummaryPanel.js",    "path": "app/product/" }
+                ,{ "name": "ProductComplDetailPanel.js","path": "app/product/" }
+                ,{ "name": "StateComplSummaryModel.js", "path": "app/state/" }
+                ,{ "name": "StateComplSummaryStore.js", "path": "app/state/" }
+                ,{ "name": "StateComplSummaryGrid.js",  "path": "app/state/" }  
+
+                ,{ "name": "RegRequestModel.js",        "path": "app/state/" }
+                ,{ "name": "RegRequestStore.js",        "path": "app/state/" }
+                ,{ "name": "RegRequestGrid.js",         "path": "app/state/" }
+                ,{ "name": "RegRequestPanel.js",        "path": "app/state/" }
+ 				
+    			,{ "name": "MainTabPanel.js",			"path": "app/ui/" }
+		
+            ]
+        },
+        {
+            "name": "Application - Production",
+            "target": "app/app-all.js",
+            "compress": true,
+            "files": [
+                 { "name": "extjs/all-classes.js",	"path": "" }
+    			,{ "name": "app.js",				"path": "" } 			
+    			,{ "name": "session.js",			"path": "app/ui/" }
+            ]
+        }
+        ,{
+            "name": "Application - Production Admin",
+            "target": "app/app-admin-all.js",
+            "compress": true,
+            "files": [
+            	 
+                  { "name": "ColaPreferencesForm.js",	"path": "app/admin/" }
+                 ,{ "name": "StateReqModel.js",			"path": "app/state/" }
+                 ,{ "name": "StateReqStore.js",			"path": "app/state/" } 
+                 ,{ "name": "StateReqGrid.js",		    "path": "app/state/" }
+                 ,{ "name": "UserModel.js",             "path": "app/admin/" }
+                 ,{ "name": "UserStore.js",         	"path": "app/admin/" }
+                 ,{ "name": "UserGrid.js",	         	"path": "app/admin/" }
+                 ,{ "name": "UserForm.js",		        "path": "app/admin/" }
+                 ,{ "name": "UserLogModel.js",		    "path": "app/admin/" }
+                 ,{ "name": "UserLogStore.js",		    "path": "app/admin/" }
+                 ,{ "name": "UserLogGrid.js",           "path": "app/admin/" }                 
+                 ,{ "name": "UserManagerPanel.js",	         "path": "app/admin/" }
+                 ,{ "name": "DataLoadManualForm.js",         "path": "app/admin/" }
+                 ,{ "name": "DataLoadMonitoringPanel.js",    "path": "app/admin/" }
+                 ,{ "name": "IcsAdmin.js",	"path":          "app/admin/" }                 
+            ]
+        }
+        ,{
+            "name": "ICS - Login Production",
+            "target": "app/app-login-all.js",
+            "compress": true,
+            "files": [
+                 { "name": "App.i18n-en_us.js",	"path": "app/locale/" } 			
+    			,{ "name": "Toast.js",			"path": "app/ux/" }
+    			,{ "name": "login.js",			"path": "app/ui/" }
+            ]
+        }
+        ,{
+            "name": "ICS - Client Search",
+            "target": "app/app-client-search.js",
+            "compress": true,
+            "files": [
+            
+            	 { "name": "ClientSearchMode.js",		"path": "app/clients/" } 
+                ,{ "name": "ClientSearchModel.js",		"path": "app/clients/" } 			
+    			,{ "name": "ClientSearchStore.js",		"path": "app/clients/" } 
+    			,{ "name": "ClientSearchCombo.js",		"path": "app/clients/" } 
+            ]
+        }        
+        ,{
+            "name": "ICS - CSS",
+            "target": "resources/css/app-all.css",
+            "compress": false,
+            "files": [
+                 { "name": "gridPrinter.css",	"path": "app/ux/css/" } 
+    			,{ "name": "ics.css",			"path": "resources/css/" } 			
+            ]
+        }
+    ],
+    "resources": [
+         { "src": "../../ext-4.2.3.1174/ext-all.js",                    "dest": "extjs/ext-all.js",             "filters": ".*[\\.js]" }
+		,{ "src": "../../ext-4.2.3.1174/ext-all-debug.js",        		"dest": "extjs/ext-all-debug.js",		"filters": ".*[\\.js]" }
+		,{ "src": "../../ext-4.2.3.1174/ext.js",        				"dest": "extjs/ext.js",			"filters": ".*[\\.js]" }
+		,{ "src": "../../ext-4.2.3.1174/resources/css/ext-all.css",      "dest": "extjs/resources/css/ext-all.css",	"filters": ".*[\\.css]" }
+        ,{ "src": "../../ext-4.2.3.1174/resources/ext-theme-classic",    "dest": "extjs/resources",  "filters": ".*[\\.css]" }
+    	,{ "src": "../../ext-4.2.3.1174/resources/themes/images",		"dest" : "extjs/resources/themes",  		"filters": ".*[\\.jpg|\\.gif|\\.png]" }	    
+   		,{ "src": "app/ux/css",										"dest": "resources",					"filters": ".*[\\.css|\\.jpg|\\.gif|\\.png]" }
+   		,{ "src": "views/reports/_reports.css",    					"dest": "resources/css/_reports.css",   "filters": ".*[\\.css]" }
+   		,{ "src": "index-prod.cfm",    								"dest": "index.cfm",                	"filters": ".*[\\.cfm]" }
+    ]
+}
